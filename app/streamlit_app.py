@@ -18,6 +18,46 @@ st.markdown("""
 **👥 Creada con ❤️ por _Tomás Moure_ y _Matías Amen_.**
 """)
 
+# Explicación de cómo funciona la app
+with st.expander("ℹ️ ¿Cómo funciona Conecta Bien?"):
+    st.markdown("""
+Conecta Bien te ayuda a mejorar tu comunicación con inteligencia artificial. La app está dividida en 3 secciones clave:
+
+### 🔍 1. Analiza tu comunicación
+Escribí un mensaje como lo harías en una conversación real. La IA te devuelve:
+- El **tono emocional**
+- El nivel de **claridad**
+- Las **emociones detectadas**
+- Consejos útiles para mejorar tu expresión
+
+---
+
+### 🎯 2. Generá un ejercicio personalizado
+Después del análisis, podés generar un ejercicio práctico adaptado a tu mensaje. Puede ser sobre:
+- Asertividad
+- Escucha activa
+- Empatía
+- Resolución de conflictos
+
+---
+
+### 💬 3. Practicá con el Chatbot
+Simulá una conversación real:
+1. Enviás un mensaje al bot según el contexto.
+2. El bot responde con empatía y hace una pregunta.
+3. Le contestás.
+4. Recibís un **feedback general sobre cómo te comunicaste**.
+
+---
+
+### 🎮 Puntos acumulados
+Cada acción suma puntos que podés ver en la barra lateral:
+- Análisis: +10
+- Ejercicio: +5
+- Conversación completada: +5
+""")
+
+
 # Inicializar puntos
 if "puntos" not in st.session_state:
     st.session_state.puntos = 0
